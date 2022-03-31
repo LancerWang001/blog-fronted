@@ -3,7 +3,7 @@
     <!-- Page Header -->
     <header
       class="masthead"
-      style="background-image: url('img/contact-bg.jpg')"
+      :style="{ backgroundImage: 'url(' + GRIDSOME_IMG_URL + 'img/contact-bg.jpg)' }"
     >
       <div class="overlay"></div>
       <div class="container">
