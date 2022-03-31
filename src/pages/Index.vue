@@ -26,10 +26,10 @@
                 <h2 class="post-title">
                   {{ edge.node.title }}
                 </h2>
-                <h3 class="post-subtitle">
-                  <g-link :to="'/tag/' + tag.id" v-for="tag of edge.node.tags" :key="tag.id">{{ tag.title }} </g-link>
-                </h3>
               </g-link>
+              <h3 class="post-subtitle">
+                <g-link :to="'/tag/' + tag.id" v-for="tag of edge.node.tags" :key="tag.id">{{ tag.title }} </g-link>
+              </h3>
               <p class="post-meta">
                 Posted by
                 <a href="#">{{ edge.node.create_by.username }}</a>
